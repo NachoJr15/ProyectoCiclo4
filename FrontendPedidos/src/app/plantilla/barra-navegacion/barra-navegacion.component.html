@@ -1,0 +1,57 @@
+<style>
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<nav class="#64b5f6 blue lighten-2">
+    <div class="nav-wrapper">
+        <a routerLink="/inicio" class="brand-logo">INICIO</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a><img src="https://www.google.com/logos/fnbx/westminster_dog_show/westminster_kp_lm.gif"></a>
+
+
+        <!--<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+        <ul class="right hide-on-med-and-down">
+
+            <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas">
+                    <h4></h4>
+                </a></li>
+            <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-productos">
+                    <h4>Productos</h4>
+                </a></li>
+            <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave">
+                    <h4>Cambiar Clave</h4>
+                </a></li>
+            <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">
+                    <h4>Cerrar Sesión</h4>
+                </a></li>
+            <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">
+                    <h4>Iniciar Sesión</h4>
+                </a></li>
+        </ul>
+
+    </div>
+
+    <div class="center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <a class="center"><img
+                src="https://media1.giphy.com/media/c6N1iKWSyuAQn7p0p4/giphy.gif?cid=790b76116b8c7b40c8d742a3e0f2c0f37d128d04727e6af8&rid=giphy.gif&ct=s"></a>
+    </div>
+
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas">Personas</a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-productos">Productos</a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave">Cambiar Clave</a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">Cerrar Sesión</a></li>
+    <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">Iniciar Sesión</a></li>
+</ul>
