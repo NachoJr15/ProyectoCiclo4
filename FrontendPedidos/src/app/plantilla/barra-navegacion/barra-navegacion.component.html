@@ -2,16 +2,16 @@
     .center {
         margin: 0;
         position: absolute;
-        top: 30%;
-        left: 40%;
+        top: 60%;
+        left: 70%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 </style>
 <nav class="#64b5f6 blue lighten-2">
     <div class="nav-wrapper">
-        <a routerLink="/inicio" class="brand-logo">INICIO</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/inicio" class="brand-logo">Inicio</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a><img src="https://www.google.com/logos/fnbx/westminster_dog_show/westminster_kp_lm.gif"></a>
 
 
@@ -19,19 +19,19 @@
         <ul class="right hide-on-med-and-down">
 
             <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas">
-                    <h4></h4>
+                    <h5>Personas</h5>
                 </a></li>
             <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-productos">
-                    <h4>Productos</h4>
+                    <h5>Productos</h5>
                 </a></li>
             <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave">
-                    <h4>Cambiar Clave</h4>
+                    <h5>Cambiar Clave</h5>
                 </a></li>
             <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">
-                    <h4>Cerrar Sesión</h4>
+                    <h5>Cerrar Sesión</h5>
                 </a></li>
             <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">
-                    <h4>Iniciar Sesión</h4>
+                    <h5>Iniciar Sesión</h5>
                 </a></li>
         </ul>
 
@@ -49,9 +49,9 @@
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-    <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas">Personas</a></li>
-    <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-productos">Productos</a></li>
-    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave">Cambiar Clave</a></li>
-    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">Cerrar Sesión</a></li>
-    <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">Iniciar Sesión</a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas"><h5>Personas</h5></a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-productos"><h5>Productos</h5></a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave"><h5>Cambiar Clave</h5></a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion"><h5>Cerrar Sesión</h5></a></li>
+    <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar"><h5>Iniciar Sesión</h5></a></li>
 </ul>
